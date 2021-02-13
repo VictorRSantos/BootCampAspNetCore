@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kJVgNIi3yxbtVOoq/RfKTA2ViMaV0OEmA89J7wlkB2i23lx+BEwF1cQ8qF62aNGt0vQFkw36xarzC+UT4BgQ/g==",
+  "dgSpecHash": "UdSbWZrquxtyRPdvKvnzdTn/o2jHxUpRUGJLORd1dgU/jXgtt5fmbf7PWVY7NVkL8OF4s9OmkjyNzuL8+yQo9A==",
   "success": true,
   "projectFilePath": "S:\\2021\\BootCampNetCoreLuis_Dev\\Projeto\\DevEvents\\DevEvents.API\\DevEvents.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Victor\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

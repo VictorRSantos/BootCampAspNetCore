@@ -23,7 +23,7 @@ namespace DevEvents.API.Persistencia
 
         public DbSet<Usuario> Usuarios { get; set; }
 
-
+        public DbSet<Inscricao> Inscricoes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Chave Primaria: Haskey
@@ -44,6 +44,21 @@ namespace DevEvents.API.Persistencia
             modelBuilder.Entity<Usuario>().HasKey(e => e.Id);           
 
             modelBuilder.Entity<Categoria>().HasKey(e => e.Id);
+
+            modelBuilder.Entity<Inscricao>().HasKey(i => i.Id);
+
+            modelBuilder.Entity<Inscricao>()
+                .HasOne(i => i.Evento)
+                .WithMany(e => e.Inscricoes)
+                .HasForeignKey(i => i.IdEvento)
+                .OnDelete(DeleteBehavior.Restrict); 
+            
+            modelBuilder.Entity<Inscricao>()
+                .HasOne(i => i.Usuario)
+                .WithMany(e => e.Inscricoes)
+                .HasForeignKey(i => i.IdUsuario)
+                .OnDelete(DeleteBehavior.Restrict);
+
 
         }
 

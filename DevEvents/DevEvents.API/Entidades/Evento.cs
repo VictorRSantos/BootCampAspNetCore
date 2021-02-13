@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DevEvents.API.Entidades
 {
@@ -19,13 +20,14 @@ namespace DevEvents.API.Entidades
 
         public DateTime DataCadastro { get; set; }
 
-        public Categoria Categoria { get; set; }
 
         public int IdCategoria { get; set; }
-
+        public Categoria Categoria { get; set; }
+        public int IdUsuario { get; set; }       
         public Usuario Usuario { get; set; }
 
-        public int IdUsuario { get; set; }
+
+        public List<Inscricao> Inscricoes { get; set; }
 
 
 
